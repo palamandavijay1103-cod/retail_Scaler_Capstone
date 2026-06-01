@@ -1,0 +1,201 @@
+store_id,store_name,city,state,region,opening_date,store_type
+S-1,Store_1,Mumbai,Tamil Nadu,South,2023-04-04,HighStreet
+S-2,Store_2,Delhi,Maharashtra,South,2024-02-22,HighStreet
+S-3,Store_3,Mumbai,Karnataka,South,2023-10-28,Mall
+S-4,Store_4,Kolkata,Tamil Nadu,East,2024-11-14,HighStreet
+S-5,Store_5,Kolkata,West Bengal,West,2024-07-25,HighStreet
+S-6,Store_6,Bangalore,Tamil Nadu,East,2023-09-23,HighStreet
+S-7,Store_7,Chennai,Delhi,East,2024-11-09,HighStreet
+S-8,Store_8,Chennai,Delhi,West,2022-01-31,Warehouse
+S-9,Store_9,Kolkata,Karnataka,East,2023-01-25,HighStreet
+S-10,Store_10,Bangalore,Maharashtra,North,2024-11-10,Mall
+S-11,Store_11,Chennai,Delhi,South,2022-02-21,Warehouse
+S-12,Store_12,Chennai,Tamil Nadu,West,2024-04-17,Warehouse
+S-13,Store_13,Kolkata,Tamil Nadu,North,2024-09-27,Mall
+S-14,Store_14,Bangalore,Karnataka,East,2023-05-03,HighStreet
+S-15,Store_15,Kolkata,Karnataka,South,2022-02-06,HighStreet
+S-16,Store_16,Chennai,Maharashtra,East,2024-09-02,Mall
+S-17,Store_17,Bangalore,West Bengal,East,2024-04-22,HighStreet
+S-18,Store_18,Mumbai,West Bengal,North,2022-05-09,Mall
+S-19,Store_19,Chennai,Maharashtra,East,2024-06-20,HighStreet
+S-20,Store_20,Bangalore,Delhi,North,2022-01-20,Warehouse
+S-21,Store_21,Delhi,Karnataka,North,2023-01-13,HighStreet
+S-22,Store_22,Bangalore,Maharashtra,West,2023-06-29,HighStreet
+S-23,Store_23,Bangalore,Delhi,South,2023-08-07,Mall
+S-24,Store_24,Kolkata,Tamil Nadu,South,2024-04-02,Mall
+S-25,Store_25,Mumbai,Maharashtra,West,2022-06-20,Warehouse
+S-26,Store_26,Chennai,West Bengal,West,2023-06-07,Mall
+S-27,Store_27,Mumbai,Delhi,East,2022-01-09,Mall
+S-28,Store_28,Mumbai,West Bengal,West,2022-04-09,HighStreet
+S-29,Store_29,Chennai,West Bengal,East,2023-06-27,HighStreet
+S-30,Store_30,Kolkata,Tamil Nadu,North,2022-06-13,Warehouse
+S-31,Store_31,Delhi,Maharashtra,North,2023-05-22,HighStreet
+S-32,Store_32,Mumbai,Maharashtra,North,2022-02-01,Mall
+S-33,Store_33,Chennai,Tamil Nadu,West,2024-11-12,Mall
+S-34,Store_34,Chennai,Delhi,South,2022-07-09,Mall
+S-35,Store_35,Mumbai,West Bengal,East,2022-05-04,HighStreet
+S-36,Store_36,Kolkata,West Bengal,East,2024-04-30,Mall
+S-37,Store_37,Delhi,Karnataka,South,2024-06-24,HighStreet
+S-38,Store_38,Kolkata,Karnataka,West,2023-02-10,HighStreet
+S-39,Store_39,Delhi,Delhi,West,2022-11-28,HighStreet
+S-40,Store_40,Mumbai,Karnataka,West,2022-11-11,Mall
+S-41,Store_41,Bangalore,Delhi,North,2022-09-15,Mall
+S-42,Store_42,Bangalore,West Bengal,East,2022-11-29,HighStreet
+S-43,Store_43,Delhi,Tamil Nadu,East,2022-07-28,Mall
+S-44,Store_44,Chennai,West Bengal,North,2023-08-08,Mall
+S-45,Store_45,Kolkata,Delhi,North,2023-08-20,Warehouse
+S-46,Store_46,Delhi,Tamil Nadu,East,2022-04-02,Mall
+S-47,Store_47,Mumbai,Maharashtra,West,2022-10-05,HighStreet
+S-48,Store_48,Delhi,Tamil Nadu,South,2022-09-29,Warehouse
+S-49,Store_49,Mumbai,Tamil Nadu,South,2022-08-14,Mall
+S-50,Store_50,Bangalore,Delhi,North,2022-08-13,HighStreet
+S-51,Store_51,Mumbai,West Bengal,South,2022-11-22,Mall
+S-52,Store_52,Delhi,West Bengal,North,2022-08-30,HighStreet
+S-53,Store_53,Bangalore,Delhi,North,2024-08-14,Warehouse
+S-54,Store_54,Mumbai,Karnataka,East,2023-01-02,HighStreet
+S-55,Store_55,Bangalore,Maharashtra,North,2023-01-09,Warehouse
+S-56,Store_56,Kolkata,Tamil Nadu,South,2024-06-22,Mall
+S-57,Store_57,Delhi,West Bengal,South,2023-09-20,Warehouse
+S-58,Store_58,Delhi,Delhi,East,2024-02-10,HighStreet
+S-59,Store_59,Kolkata,Delhi,East,2023-01-21,Warehouse
+S-60,Store_60,Mumbai,Karnataka,South,2022-02-26,Warehouse
+S-61,Store_61,Bangalore,Delhi,West,2022-02-07,Mall
+S-62,Store_62,Bangalore,Delhi,North,2023-12-25,Warehouse
+S-63,Store_63,Kolkata,West Bengal,East,2024-02-29,HighStreet
+S-64,Store_64,Kolkata,West Bengal,West,2022-01-14,Warehouse
+S-65,Store_65,Delhi,Karnataka,East,2024-09-24,Warehouse
+S-66,Store_66,Bangalore,Delhi,South,2023-01-29,HighStreet
+S-67,Store_67,Mumbai,Maharashtra,East,2024-06-23,Mall
+S-68,Store_68,Delhi,Maharashtra,West,2023-10-12,HighStreet
+S-69,Store_69,Bangalore,Maharashtra,West,2023-02-24,Mall
+S-70,Store_70,Chennai,West Bengal,West,2024-09-29,Mall
+S-71,Store_71,Chennai,Karnataka,West,2024-09-18,Mall
+S-72,Store_72,Bangalore,Maharashtra,South,2023-04-26,Mall
+S-73,Store_73,Kolkata,Karnataka,South,2022-11-14,Warehouse
+S-74,Store_74,Chennai,Tamil Nadu,South,2022-08-15,Warehouse
+S-75,Store_75,Chennai,Maharashtra,South,2022-01-23,HighStreet
+S-76,Store_76,Mumbai,West Bengal,North,2022-07-10,Warehouse
+S-77,Store_77,Kolkata,Karnataka,South,2023-07-31,HighStreet
+S-78,Store_78,Bangalore,Delhi,West,2023-06-28,HighStreet
+S-79,Store_79,Mumbai,Maharashtra,West,2024-06-13,Mall
+S-80,Store_80,Mumbai,Karnataka,West,2022-04-18,Warehouse
+S-81,Store_81,Kolkata,West Bengal,East,2022-02-26,Mall
+S-82,Store_82,Delhi,Tamil Nadu,North,2023-09-25,Warehouse
+S-83,Store_83,Kolkata,Maharashtra,West,2024-12-15,Mall
+S-84,Store_84,Kolkata,West Bengal,West,2022-06-14,Warehouse
+S-85,Store_85,Chennai,Karnataka,South,2024-03-19,HighStreet
+S-86,Store_86,Bangalore,Karnataka,South,2024-12-02,Mall
+S-87,Store_87,Bangalore,Delhi,East,2022-03-28,HighStreet
+S-88,Store_88,Chennai,Tamil Nadu,West,2024-07-24,Warehouse
+S-89,Store_89,Kolkata,West Bengal,East,2022-03-06,HighStreet
+S-90,Store_90,Bangalore,Delhi,South,2023-08-28,HighStreet
+S-91,Store_91,Kolkata,Maharashtra,South,2023-01-29,Mall
+S-92,Store_92,Delhi,Maharashtra,South,2024-10-15,Warehouse
+S-93,Store_93,Mumbai,Tamil Nadu,West,2024-11-04,HighStreet
+S-94,Store_94,Delhi,West Bengal,West,2024-06-16,HighStreet
+S-95,Store_95,Bangalore,Maharashtra,West,2024-06-22,Warehouse
+S-96,Store_96,Chennai,Delhi,East,2023-04-18,Warehouse
+S-97,Store_97,Mumbai,Tamil Nadu,West,2023-06-07,HighStreet
+S-98,Store_98,Mumbai,West Bengal,South,2022-01-13,HighStreet
+S-99,Store_99,Chennai,Maharashtra,East,2023-03-03,Warehouse
+S-100,Store_100,Kolkata,Delhi,West,2022-02-23,HighStreet
+S-101,Store_101,Bangalore,Maharashtra,West,2023-12-06,Warehouse
+S-102,Store_102,Mumbai,Maharashtra,South,2023-03-13,HighStreet
+S-103,Store_103,Kolkata,West Bengal,North,2024-09-02,Warehouse
+S-104,Store_104,Kolkata,Maharashtra,South,2022-09-10,Mall
+S-105,Store_105,Mumbai,Karnataka,West,2022-05-22,Warehouse
+S-106,Store_106,Kolkata,Maharashtra,North,2023-12-13,HighStreet
+S-107,Store_107,Chennai,Tamil Nadu,South,2023-07-25,Warehouse
+S-108,Store_108,Bangalore,West Bengal,West,2024-05-26,Warehouse
+S-109,Store_109,Kolkata,Maharashtra,East,2023-08-15,HighStreet
+S-110,Store_110,Chennai,West Bengal,North,2024-01-09,HighStreet
+S-111,Store_111,Mumbai,Maharashtra,North,2022-09-22,Mall
+S-112,Store_112,Delhi,Tamil Nadu,West,2024-10-10,HighStreet
+S-113,Store_113,Bangalore,Tamil Nadu,South,2024-08-21,Warehouse
+S-114,Store_114,Chennai,Delhi,West,2022-07-29,Mall
+S-115,Store_115,Chennai,Tamil Nadu,East,2023-05-13,Warehouse
+S-116,Store_116,Chennai,Tamil Nadu,North,2023-07-13,Mall
+S-117,Store_117,Mumbai,West Bengal,North,2024-10-09,Mall
+S-118,Store_118,Bangalore,Karnataka,East,2023-10-19,HighStreet
+S-119,Store_119,Chennai,Delhi,East,2024-08-14,Mall
+S-120,Store_120,Chennai,West Bengal,East,2023-08-03,Mall
+S-121,Store_121,Kolkata,Maharashtra,East,2023-09-23,Warehouse
+S-122,Store_122,Kolkata,Delhi,East,2024-09-07,Warehouse
+S-123,Store_123,Kolkata,West Bengal,East,2023-02-18,HighStreet
+S-124,Store_124,Delhi,Karnataka,North,2024-03-23,HighStreet
+S-125,Store_125,Chennai,Delhi,South,2023-12-21,Mall
+S-126,Store_126,Bangalore,Tamil Nadu,South,2023-02-14,HighStreet
+S-127,Store_127,Chennai,West Bengal,East,2023-05-04,Warehouse
+S-128,Store_128,Bangalore,Maharashtra,North,2024-10-01,Mall
+S-129,Store_129,Chennai,Karnataka,South,2024-09-01,Warehouse
+S-130,Store_130,Delhi,Maharashtra,South,2022-01-09,Warehouse
+S-131,Store_131,Chennai,Maharashtra,East,2024-03-19,Warehouse
+S-132,Store_132,Kolkata,Tamil Nadu,East,2023-09-20,Warehouse
+S-133,Store_133,Kolkata,West Bengal,South,2024-11-16,HighStreet
+S-134,Store_134,Bangalore,Maharashtra,East,2022-12-19,Warehouse
+S-135,Store_135,Bangalore,West Bengal,North,2023-10-20,HighStreet
+S-136,Store_136,Mumbai,Karnataka,South,2022-11-01,Warehouse
+S-137,Store_137,Delhi,Maharashtra,South,2023-10-12,Mall
+S-138,Store_138,Kolkata,Tamil Nadu,West,2022-07-19,Mall
+S-139,Store_139,Mumbai,Maharashtra,North,2024-12-01,HighStreet
+S-140,Store_140,Bangalore,Delhi,East,2023-04-09,HighStreet
+S-141,Store_141,Mumbai,Delhi,North,2024-08-15,Mall
+S-142,Store_142,Mumbai,Karnataka,North,2023-04-07,Warehouse
+S-143,Store_143,Chennai,West Bengal,South,2024-07-17,HighStreet
+S-144,Store_144,Bangalore,Karnataka,North,2022-10-15,HighStreet
+S-145,Store_145,Delhi,Karnataka,North,2023-01-08,Warehouse
+S-146,Store_146,Chennai,Maharashtra,South,2024-03-15,Mall
+S-147,Store_147,Delhi,Maharashtra,East,2022-07-28,Mall
+S-148,Store_148,Bangalore,Tamil Nadu,South,2022-11-09,Warehouse
+S-149,Store_149,Mumbai,Karnataka,North,2024-06-06,Mall
+S-150,Store_150,Chennai,West Bengal,South,2022-04-30,Warehouse
+S-151,Store_151,Delhi,Karnataka,South,2024-06-04,Warehouse
+S-152,Store_152,Mumbai,Delhi,North,2023-10-18,Mall
+S-153,Store_153,Delhi,Tamil Nadu,North,2024-01-22,Mall
+S-154,Store_154,Chennai,West Bengal,North,2024-01-22,Mall
+S-155,Store_155,Chennai,Delhi,East,2024-02-07,Warehouse
+S-156,Store_156,Chennai,Maharashtra,West,2023-04-04,Mall
+S-157,Store_157,Mumbai,West Bengal,North,2022-10-24,Mall
+S-158,Store_158,Chennai,Karnataka,West,2024-08-12,HighStreet
+S-159,Store_159,Mumbai,Karnataka,East,2022-11-16,Mall
+S-160,Store_160,Delhi,West Bengal,East,2023-05-29,HighStreet
+S-161,Store_161,Chennai,Maharashtra,South,2024-07-19,Mall
+S-162,Store_162,Delhi,Tamil Nadu,North,2022-12-23,HighStreet
+S-163,Store_163,Delhi,Delhi,North,2022-11-25,Warehouse
+S-164,Store_164,Kolkata,Karnataka,North,2024-11-15,HighStreet
+S-165,Store_165,Mumbai,West Bengal,North,2023-03-10,HighStreet
+S-166,Store_166,Kolkata,Delhi,North,2022-12-05,HighStreet
+S-167,Store_167,Bangalore,West Bengal,South,2022-02-20,HighStreet
+S-168,Store_168,Delhi,Tamil Nadu,South,2022-12-30,Mall
+S-169,Store_169,Mumbai,Karnataka,North,2023-10-18,HighStreet
+S-170,Store_170,Chennai,Tamil Nadu,West,2024-07-14,Mall
+S-171,Store_171,Chennai,Maharashtra,North,2023-08-07,Mall
+S-172,Store_172,Bangalore,West Bengal,East,2024-04-12,Mall
+S-173,Store_173,Mumbai,West Bengal,North,2022-05-12,Mall
+S-174,Store_174,Bangalore,Delhi,South,2024-07-30,Mall
+S-175,Store_175,Mumbai,Maharashtra,North,2024-12-08,Mall
+S-176,Store_176,Bangalore,West Bengal,East,2024-06-21,HighStreet
+S-177,Store_177,Kolkata,Maharashtra,South,2023-03-26,Mall
+S-178,Store_178,Mumbai,Tamil Nadu,South,2024-08-13,Mall
+S-179,Store_179,Delhi,Karnataka,East,2023-05-05,Mall
+S-180,Store_180,Chennai,Karnataka,South,2023-04-19,Mall
+S-181,Store_181,Bangalore,Tamil Nadu,South,2023-06-28,Mall
+S-182,Store_182,Chennai,Maharashtra,North,2022-12-29,Warehouse
+S-183,Store_183,Chennai,Delhi,South,2023-09-17,HighStreet
+S-184,Store_184,Bangalore,Tamil Nadu,North,2022-08-30,Warehouse
+S-185,Store_185,Kolkata,Tamil Nadu,East,2022-07-08,Mall
+S-186,Store_186,Mumbai,Delhi,South,2022-05-10,Warehouse
+S-187,Store_187,Mumbai,West Bengal,South,2024-08-26,Mall
+S-188,Store_188,Kolkata,Tamil Nadu,North,2023-09-01,Mall
+S-189,Store_189,Kolkata,West Bengal,South,2023-08-13,Mall
+S-190,Store_190,Kolkata,Delhi,East,2023-08-02,Warehouse
+S-191,Store_191,Mumbai,West Bengal,North,2022-11-24,HighStreet
+S-192,Store_192,Delhi,Maharashtra,South,2024-02-21,HighStreet
+S-193,Store_193,Bangalore,Karnataka,South,2024-02-21,Warehouse
+S-194,Store_194,Kolkata,Delhi,East,2022-03-14,Warehouse
+S-195,Store_195,Chennai,Delhi,South,2024-10-06,Mall
+S-196,Store_196,Bangalore,Maharashtra,South,2023-06-15,Warehouse
+S-197,Store_197,Delhi,Maharashtra,South,2024-07-14,HighStreet
+S-198,Store_198,Kolkata,Karnataka,North,2023-12-23,HighStreet
+S-199,Store_199,Delhi,Maharashtra,East,2024-01-05,Mall
+S-200,Store_200,Bangalore,Maharashtra,North,2024-09-22,Warehouse
