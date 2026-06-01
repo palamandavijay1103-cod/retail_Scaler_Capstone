@@ -30,13 +30,13 @@ RAW_DATA_DIR.mkdir(exist_ok=True)
 # Get links by: right-click file in Drive > Share > Copy link
 FILE_URLS = {
     "stores.csv": None,  # Already present
-    "customers.csv": None,
-    "orders.csv": None,
-    "order_items.csv": None,
-    "products.csv": None,
-    "payments.csv": None,
-    "clickstream.csv": None,
-    "wallet.csv": None,
+    "customers.csv": "https://drive.google.com/uc?id=1PfT5Pnq23cW0Tu7n_gWDGuE-SrNzZJMT",
+    "orders.csv": "https://drive.google.com/uc?id=1Yn555ETEzYcIYQHp4BrAR9Fheb34jtiP",
+    "order_items.csv": "https://drive.google.com/uc?id=1DofYhncoMhz-A0d9fH9nu1EjUOfr_J28",
+    "products.csv": "https://drive.google.com/uc?id=1Slm3xeixVInwsxSDQqaB0TGjTDmqtNFr",
+    "payments.csv": "https://drive.google.com/uc?id=1HF_rtrNqa_7am2edmJY62fYhTRYDURHp",
+    "clickstream.csv": "https://drive.google.com/uc?id=1W3GTtDcXsPcRhN2AFherwHnJ5Na6CJzf",
+    "inventory.csv": "https://drive.google.com/uc?id=1_ksrmr3hg-f5oRGHSn06zK06CxFnwyij",
 }
 
 def download_file(filename, url):
