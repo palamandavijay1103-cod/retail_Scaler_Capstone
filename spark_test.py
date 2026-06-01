@@ -11,7 +11,13 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 spark = SparkSession.builder \
     .appName('spark_test') \
     .master('local[1]') \
+    .config('spark.hadoop.fs.defaultFS', 'file:///') \
     .config('spark.sql.warehouse.dir', str(Path('spark_warehouse').resolve())) \
+    .config('spark.hadoop.hive.metastore.warehouse.dir', str(Path('spark_warehouse').resolve())) \
+    .config('spark.hadoop.hive.exec.scratchdir', str(Path('/tmp/spark_scratch').resolve())) \
+    .config('spark.hadoop.hadoop.security.authentication', 'simple') \
+    .config('spark.hadoop.hadoop.security.authorization', 'false') \
+    .config('spark.hadoop.javax.security.auth.useSubjectCredsOnly', 'false') \
     .enableHiveSupport() \
     .getOrCreate()
 
