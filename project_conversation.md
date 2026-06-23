@@ -26,7 +26,7 @@ This file captures our Capstone project decisions, setup steps, and the current 
 - [x] Design cleaned and enriched Hive tables or analytics datasets
 - [x] Implement PySpark transformations for business reporting
 - [x] Perform exploratory data analysis on the ingested data
-- [ ] Build Capstone deliverables and document the pipeline
+- [x] Build Capstone deliverables and document the pipeline
 
 ## Deliverables and required insights
 - Required business insights:
@@ -41,15 +41,15 @@ This file captures our Capstone project decisions, setup steps, and the current 
   - revenue per region
   - optional store-wise conversion if clickstream alignment is implemented
 - Required output organization:
-  - `{username}_analytics_output/top_products_by_revenue/`
-  - `{username}_analytics_output/top_customers_by_spending/`
-  - `{username}_analytics_output/top_stores/`
-  - `{username}_analytics_output/repeat_customer_percent/`
-  - `{username}_analytics_output/clv/`
-  - `{username}_analytics_output/aov/`
-  - `{username}_analytics_output/monthly_active_customers/`
-  - `{username}_analytics_output/revenue_per_store/`
-  - `{username}_analytics_output/revenue_per_region/`
+  - `analytics_output/top_products_by_revenue/`
+  - `analytics_output/top_customers_by_spending/`
+  - `analytics_output/top_stores/`
+  - `analytics_output/repeat_customer_percent/`
+- `analytics_output/clv/`
+- `analytics_output/aov/`
+- `analytics_output/monthly_active_customers/`
+- `analytics_output/revenue_per_store/`
+- `analytics_output/revenue_per_region/`
 - Preferred output format: Parquet for analytics-scale storage and querying
 - Architecture notes from Lecture 24:
   - Raw → Staging → Analytics layered approach
