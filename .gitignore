@@ -219,3 +219,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Ignore generated local outputs and Spark/Hive state
+.vscode/
+metastore_db/
+spark_warehouse/
+hdfs_output/
+business_output/

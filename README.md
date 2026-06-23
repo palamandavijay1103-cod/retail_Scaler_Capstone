@@ -12,11 +12,26 @@ https://drive.google.com/drive/u/0/folders/1oPBELdKx2gcZ6Uamur45729EXIt7j716
 Before using PySpark/Hive, load the project Java environment:
 
 ```bash
-source ./setup_env.sh
+source ./scripts/setup/setup_env.sh
 ```
 
 Then run:
 
 ```bash
-python3 spark_test.py
+bash ./scripts/setup/run_spark_test.sh
+```
+
+## Running ETL ingestion
+```bash
+bash ./scripts/setup/run_etl.sh
+```
+
+## Running cleaned/enriched transforms
+```bash
+bash ./scripts/setup/run_transform.sh
+```
+
+## Running analysis
+```bash
+bash ./scripts/setup/run_analysis.sh
 ```
