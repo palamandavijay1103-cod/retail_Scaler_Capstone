@@ -35,3 +35,8 @@ bash ./scripts/setup/run_transform.sh
 ```bash
 bash ./scripts/setup/run_analysis.sh
 ```
+
+## Generating required deliverable outputs
+```bash
+bash ./scripts/setup/run_generate_outputs.sh
+```
