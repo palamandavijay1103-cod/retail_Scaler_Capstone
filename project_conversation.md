@@ -15,7 +15,27 @@ This file captures our Capstone project decisions, setup steps, and the current 
 - `etl.py` was added to define Hive table schemas and ingest raw CSV data
 - Raw data from `raw_data/` has been ingested into Hive tables and written as Parquet
 - `scripts/transform/clean_enriched.py` was added and the cleaned/enriched transform completed successfully
-- Spark test, ETL pipeline, and transform pipeline all ran successfully in the Java 17 environment
+- `scripts/analysis/generate_outputs.py` was added and the required analytics deliverables were generated successfully
+- Spark test, ETL pipeline, transform pipeline, and analytics pipeline all ran successfully in the Java 17 environment
+
+## Business insights
+- Majority of orders were `Delivered` (300,263), contributing the largest share of order revenue (~65.3B) and amount paid (~60.1B).
+- `Online` channel accounted for 349,786 orders and ~76.0B in total sales, while `Store` channel contributed 150,214 orders and ~32.7B in sales.
+- Top revenue products were led by `P-15695`, `P-14386`, `P-8757`, `P-18263`, and `P-6432`, each generating over 14M in revenue.
+- Customer segments are balanced across `Offline`, `Online`, and `Both`, with about 16K customers in each active/inactive category.
+- Monthly order volume is stable around 13K–14K orders, with monthly revenue consistently near 2.9B–3.1B across 2022–2024.
+- Payment success is high: 460,089 successful payments versus 39,911 failed payments, indicating an ~8% payment failure rate.
+
+## Deliverable outputs
+- `business_output/analytics_output/top_products_by_revenue/data.parquet`
+- `business_output/analytics_output/top_customers_by_spending/data.parquet`
+- `business_output/analytics_output/top_stores/data.parquet`
+- `business_output/analytics_output/repeat_customer_percent/data.parquet`
+- `business_output/analytics_output/clv/data.parquet`
+- `business_output/analytics_output/aov/data.parquet`
+- `business_output/analytics_output/monthly_active_customers/data.parquet`
+- `business_output/analytics_output/revenue_per_store/data.parquet`
+- `business_output/analytics_output/revenue_per_region/data.parquet`
 
 ## Project checklist
 - [x] Initialize project and upload raw CSV files to `raw_data/`
