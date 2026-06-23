@@ -1,32 +1,55 @@
 # Project Conversation Log
 
 ## Purpose
-This file captures our Capstone project decisions, setup steps, and the current state of the work so we don't have to repeat the full process every time.
+This file explains the repository, what work has been done, and how to continue the Capstone project.
+It is intended for a new contributor who wants to understand the repo structure, data, and workflow.
 
-## Summary
-- Project based on `Lecture 24 - Capstone.pdf`
-- Environment setup for PySpark and Hive has been performed
-- Raw CSV data files were uploaded to `raw_data/`
-- Local git changes were committed and pushed to GitHub before proceeding
+## Repo overview
+- The repo is based on `Lecture 24 - Capstone.pdf`.
+- Raw input datasets are stored in `raw_data/`.
+- The project is organized into script folders under `scripts/`.
+- Generated outputs and Hive state are excluded from GitHub via `.gitignore`.
+
+## Where the raw files are
+- All raw CSV source files are in `raw_data/`.
+- These raw files are the source data for ETL, transforms, and analytics.
+
+## What we have done
+- Set up the PySpark/Hive environment and fixed Java 17 compatibility.
+- Validated Spark/Hive with `scripts/ingest/spark_test.py`.
+- Added `scripts/ingest/etl.py` to read raw CSV files and create Hive tables.
+- Added `scripts/transform/clean_enriched.py` to build cleaned/enriched analytics tables.
+- Added `scripts/analysis/analysis.py` to summarize business metrics.
+- Added `scripts/analysis/generate_outputs.py` to write final deliverables.
+- Generated final analytics output files in `business_output/analytics_output/`.
+
+## What is included in this repo
+- `raw_data/` — raw source CSV files (source data layer)
+- `scripts/setup/` — environment and runner scripts
+- `scripts/ingest/` — raw ingestion and Hive table creation
+- `scripts/transform/` — cleaned/enriched analytics table creation
+- `scripts/analysis/` — business analysis and output generation
+- `project_conversation.md` — project status and notes
+- `README.md` — repository setup and run instructions
 
 ## Current status
-- `spark_test.py` now uses a `file:///` absolute warehouse path for Spark
-- `hdfs_output/` and `spark_warehouse/` are present locally
-- `etl.py` was added to define Hive table schemas and ingest raw CSV data
-- Raw data from `raw_data/` has been ingested into Hive tables and written as Parquet
-- `scripts/transform/clean_enriched.py` was added and the cleaned/enriched transform completed successfully
-- `scripts/analysis/generate_outputs.py` was added and the required analytics deliverables were generated successfully
-- Spark test, ETL pipeline, transform pipeline, and analytics pipeline all ran successfully in the Java 17 environment
+- Raw data is available and ready in `raw_data/`.
+- Raw ingestion is complete and stored as Hive tables.
+- Cleaned/enriched analytics tables were built successfully.
+- Analytics deliverables were generated successfully.
+- The workspace was run under Java 17 and the Spark/Hive configuration is stable.
 
 ## Business insights
-- Majority of orders were `Delivered` (300,263), contributing the largest share of order revenue (~65.3B) and amount paid (~60.1B).
-- `Online` channel accounted for 349,786 orders and ~76.0B in total sales, while `Store` channel contributed 150,214 orders and ~32.7B in sales.
-- Top revenue products were led by `P-15695`, `P-14386`, `P-8757`, `P-18263`, and `P-6432`, each generating over 14M in revenue.
-- Customer segments are balanced across `Offline`, `Online`, and `Both`, with about 16K customers in each active/inactive category.
-- Monthly order volume is stable around 13K–14K orders, with monthly revenue consistently near 2.9B–3.1B across 2022–2024.
-- Payment success is high: 460,089 successful payments versus 39,911 failed payments, indicating an ~8% payment failure rate.
+- Delivered orders are the largest revenue driver, with 300,263 delivered orders generating ~65.3B.
+- The Online channel leads revenue with ~76.0B over 349,786 orders.
+- The Store channel contributes ~32.7B over 150,214 orders.
+- Top revenue products include `P-15695`, `P-14386`, `P-8757`, `P-18263`, and `P-6432`.
+- Customer segments are evenly distributed across Offline, Online, and Both.
+- Monthly order volume is stable over 2022–2024, with revenue near 2.9B–3.1B per month.
+- Payment success is high, with 460,089 successful payments and 39,911 failures.
 
 ## Deliverable outputs
+The final analytics deliverables are available under:
 - `business_output/analytics_output/top_products_by_revenue/data.parquet`
 - `business_output/analytics_output/top_customers_by_spending/data.parquet`
 - `business_output/analytics_output/top_stores/data.parquet`
@@ -37,61 +60,39 @@ This file captures our Capstone project decisions, setup steps, and the current 
 - `business_output/analytics_output/revenue_per_store/data.parquet`
 - `business_output/analytics_output/revenue_per_region/data.parquet`
 
-## Project checklist
-- [x] Initialize project and upload raw CSV files to `raw_data/`
-- [x] Set up PySpark/Hive environment and Java 17 configuration
-- [x] Validate Spark configuration with `spark_test.py`
-- [x] Create `etl.py` to define Hive schemas and ingest raw CSV data
-- [x] Run ETL and create Hive tables plus Parquet outputs in `hdfs_output/ingested/`
-- [x] Design cleaned and enriched Hive tables or analytics datasets
-- [x] Implement PySpark transformations for business reporting
-- [x] Perform exploratory data analysis on the ingested data
-- [x] Build Capstone deliverables and document the pipeline
-
-## Deliverables and required insights
-- Required business insights:
-  - top products by revenue
-  - top customers by spending
-  - top stores
-  - repeat customer percentage
-  - customer lifetime value (CLV)
-  - average order value (AOV)
-  - monthly active customers
-  - revenue per store
-  - revenue per region
-  - optional store-wise conversion if clickstream alignment is implemented
-- Required output organization:
-  - `analytics_output/top_products_by_revenue/`
-  - `analytics_output/top_customers_by_spending/`
-  - `analytics_output/top_stores/`
-  - `analytics_output/repeat_customer_percent/`
-- `analytics_output/clv/`
-- `analytics_output/aov/`
-- `analytics_output/monthly_active_customers/`
-- `analytics_output/revenue_per_store/`
-- `analytics_output/revenue_per_region/`
-- Preferred output format: Parquet for analytics-scale storage and querying
-- Architecture notes from Lecture 24:
-  - Raw → Staging → Analytics layered approach
-  - Preserve raw data as immutable source-aligned storage
-  - Clean, validate, and standardize in staging
-  - Use star schema for analytics with fact and dimension tables
-  - Partition by date keys and use columnar formats
-
-## Next steps
-1. Build Capstone deliverables and write analytic outputs to structured folders
-2. Prepare summary documentation and final submission materials
-3. Keep the project conversation updated with each milestone
+## How to run the project
+1. Set up the environment:
+   ```bash
+   source ./scripts/setup/setup_env.sh
+   ```
+2. Validate Spark/Hive:
+   ```bash
+   bash ./scripts/setup/run_spark_test.sh
+   ```
+3. Run raw ingestion:
+   ```bash
+   bash ./scripts/setup/run_etl.sh
+   ```
+4. Build cleaned/enriched tables:
+   ```bash
+   bash ./scripts/setup/run_transform.sh
+   ```
+5. Run analytics summary:
+   ```bash
+   bash ./scripts/setup/run_analysis.sh
+   ```
+6. Generate final deliverable outputs:
+   ```bash
+   bash ./scripts/setup/run_generate_outputs.sh
+   ```
 
 ## Notes
-- Prefer updating this file with any new decisions or changed assumptions
-- `spark_test.py` was updated to use `spark.hadoop.fs.defaultFS=file:///` and an absolute warehouse path
-- The failure was ultimately caused by the runtime Java version: Spark/Hive needs Java 17 in this workspace, while the shell default Java was Java 25
-- The fix is to run Spark under `JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64` (or via `source setup_env.sh`)
-- This file is the shared project memory for future reference. Keep it updated with setup decisions, environment fixes, and next steps so the process does not need to be repeated.
+- `business_output/`, `hdfs_output/`, `.vscode/`, `spark_warehouse/`, `metastore_db/`, and `derby.log` are ignored and not committed.
+- This repo uses a layered approach: raw data, staging/cleaned data, and analytics outputs.
+- Keep this file updated when new decisions or work are added.
 
 ## Update log
-- Added `etl.py` to define Hive schemas and ingest raw CSV data into Hive tables.
-- Ran `spark_test.py` successfully after Java 17 environment setup.
-- Ran `etl.py` successfully and created Hive tables plus Parquet outputs in `hdfs_output/ingested/`.
-- Next milestone: create cleaned and enriched tables for reporting and analytics.
+- Added script folders and organized the project by purpose.
+- Added raw ingestion, transform, analysis, and output generation workflows.
+- Generated analytics deliverables in `business_output/analytics_output/`.
+- Documented source data location and current repository status clearly.
